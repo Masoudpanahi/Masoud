@@ -1,0 +1,75 @@
+<DOCTYPE! html>
+
+<HTML lang="en">
+<head>
+
+<style>
+</style>
+
+
+
+
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+
+    <script> 
+
+        var x = document.getElementById("div1");
+        var y = document.getElementById("div2");
+        var z = document.getElementById("div2");
+
+        var natije = "1";
+        var adad ="";
+        for ( var i = 1 ; i < 10 ; i ++)
+        {
+            z.innerHTML = (i +":" + "<br");
+            for (var m = 1 ; m < 10 ; m = m + 1)
+            {
+                natije = (i + "x" + m + "=" + (i * m));  
+                adad = adad + natije + "<br>";
+            }
+        }
+        y.innerHTML = adad
+
+
+        var stars = "*";
+        var _innerHTML = '';
+        for ( var i = 1 ; i < 10 ; i = i + 1)
+        {
+            stars = "*";
+            for (var m = 1 ; m < i ; m ++)
+            {
+                stars = stars + "*";
+            }
+            _innerHTML = _innerHTML + stars + "<br>";
+        }   
+        for ( var i = 10 ; i > 1 ;  i--)
+        {
+            stars = "";
+            for (var m = 1 ; m < i ; m++)
+            {
+                stars = stars + "*";
+            }
+            _innerHTML = _innerHTML + stars + "<br>";
+
+        }        
+        x.innerHTML = _innerHTML;
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</head>
+</HTML>

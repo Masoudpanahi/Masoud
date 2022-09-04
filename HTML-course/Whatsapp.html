@@ -1,0 +1,197 @@
+<DOCTYPE! html>
+<HTML lang="en">
+    <head>
+        <title>Whatsapp</title>
+    </head>
+    <script src="https://kit.fontawesome.com/f611fceeca.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        .main {
+            float: left; 
+            width: 350px;   
+            height: 620px;  
+            background-color: rgb(0, 0, 0); 
+            border-top: 2px solid; 
+            border-bottom: 2px solid;  
+            border-radius: 10px;
+        }
+
+        .top_left_icons {
+            float: left;  
+            width: 32.3333%;  
+            padding-top: 3PX; 
+            padding-left: 5PX; 
+            font-size: 15px; 
+            color: rgb(255, 255, 255);
+            text-align: left;  
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .top_centre_icon {
+            float: left;  
+            width: 33.3333%;  
+            padding-top: 3PX;  
+            color: rgb(255, 255, 255);  
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .top_right_icone {
+            float: left;  
+            width: 30.3333%;  
+            padding-right: 3px;  
+            font-size: 17px; 
+            text-align: right;  
+            color: rgb(255, 255, 255);  
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .photo_div { 
+            float: left;
+            width: 30%; 
+            height: 30px; 
+            padding-top: 12PX; 
+            padding-left: 12px
+        }
+
+        .profile_image {
+            border-radius: 50%; 
+            width: 50px; 
+            height: 50px;
+            cursor: wait;
+        }
+
+        .phone_number {
+            float: left;
+            width: auto; 
+            height: 30px;
+            margin-top: 25px;
+            cursor: progress;
+            font-size: 20px; 
+            color: rgb(255, 255, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .phone_call {
+            transform: rotate(180deg); 
+            position: relative; 
+            left: 35px; 
+            top: 22px;
+            height: 35px
+        }
+
+        .chat_background {
+            padding-top: 20px; 
+            width: 100%; 
+            height: 470px;
+        }
+
+        .input {
+            background-color: rgb(211, 227, 241);
+            position: relative; 
+            left: 47px;
+            bottom: 10px;
+            width:260px; 
+            height: 38px; 
+            padding-left: 15px;
+            border: 1px solid; 
+            border-radius: 25px; 
+        }
+
+        .attachment {
+            position: relative; 
+            right: 250px;
+            bottom: 3px;
+            cursor: pointer;
+            color:rgb(2, 133, 248);
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .attachment_hidden {
+            position: relative; 
+            right: 278px;
+            bottom:     3px;
+            opacity:0;
+            cursor: pointer;
+            color: aliceblue;
+            font-size: 1px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .mic {
+            position: relative; 
+            bottom: 7px;
+            right: 13px;
+            font-size: 24px;
+            cursor: pointer;      
+            color:rgb(2, 133, 248); 
+        }
+
+       
+    
+
+
+
+    </style>
+
+<script>
+    function mic() {
+     document.getElementById("mic").style.color = "red";
+}
+</script>
+
+<body>
+
+    
+
+    <div class="main">
+
+            <div class="top_left_icons">
+                <p1>Turkcel</p1>
+                <i class="fa" name="wifi">&#xf1eb;</i>
+            </div>
+
+            <div class="top_centre_icon">
+                <p2>9:36</p2>
+            </div>
+
+            <div class="top_right_icone">
+                <p3>100%</p3> 
+                <i class="fa">&#xf240;</i>
+            </div>
+            
+            <div name="profile"  style="width:100%;">
+                <div class="photo_div" name="photo_div">
+                    <img class="profile_image" id="" src="https://media-exp1.licdn.com/dms/image/C5603AQE1l9TNTZr24A/profile-displayphoto-shrink_400_400/0/1517374389119?e=1663804800&v=beta&t=xsq177JvrspMi1M3Prygnw68U-oO3OAwYlDMvTh36_Q">  
+                </div>
+                
+                <div class="phone_number">
+                    <p4>Farzad Naghshin</p4>
+                </div>
+                
+                <div>
+                    <img class="phone_call" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAADWElEQVRoge3Z74tUVRzH8bu7RllRFKU9UIJFrCjSNTcj+kFoBEFFFESGPaxA6Q/QCgrFoMinRUhEUWkQJURghaEEhVAhJEGIWFCmW2aZWc366sGdqe9c78zcnZ1775P5PDrw/fU+O+d87zlnk2SooYaqTBjHeuzGYZzEN3gFN9fN11G4BttxWne9jYvr5v1POBfPYroHeNQBjNfNnmACBzNw03gPD+AyzMUktmZ+ne+wuE74e3EiA78DV3eJuR+ngv9BXFAldwtkDRoB5BhWF4xdid9D7NNl82YBHsrAf4srZ5hjTYj/uizWvMK34e9Q/Ctc0kee80OOP8tgzSu6CFOh8L5+4Ju5JkKew4NmzSt4Nr4MRX/Agj5zjeKjkOutQfPmFd0Sf3JcP4tcG0KuBpYNkjWv4Crt/XvtLHLdhH9CrmcGyZpXcG6zy7S0AyMZn1E8jHebS+Op5hrP+s2Tfrxa2o2xsiewMRT8BfMz9nPwgXx9jxelLXOd9PjQ0pQ+99BM4Me1fzUfydjH8E4H+G76C3eUCt8E3BaKfurMJbExA/YCHsRr2ttt1E+4swr4Ff7fuKdxQ8Y+oX0zbs7Yx6Qb9gm8ipfwKM4rHb4J8H6A25axjeKLYP8Eo5WAFRGWhL9+Q+bIi9UB/g8sqos1V3g9AG7P2OZob6vl9vGZChdJv7QtXZex3xVsU7iwLtZcYW0A3JtjfyPYN9XB2FXYEwAfy7HH5XNtHYwd1Vw+rdbYkHNUxtEwgSuqYiva4lYlSTKnOd47MjIylePzWRh/iKtmRVZQRScwGcYfd/B5MkmS1g1qYZIke7CiX7CBCjvD8rivi99K/BZ8T+CWKlk7gcXTYtf1jeU4EvyPYGFVrJ2gjgWgnk9/WKz9fL+lCs5uQPFwdlbBmFtDzKGyGXvBHA8whV7LpAe71rnpZFlsRbvQ8TCeVzBmIkmS1j0hr+0OREUnsD+MlxSMeTyMdxaMKUfYHJbQ1gL+C7S/0k32iilVWBpgTmF5D//ng/+uqji7CrsC1FHcLXMXbvrNz2z68u+5RYTL8bN27ccm3Ch9lF2Gz4N9X94ka5P0K3tIMU3j9rqZzxAuxXP4tQt8wyyeGSuR9B949+Bl6WWmgR/xpsx1c6ihhipP/wLbtSVTIvOVUAAAAABJRU5ErkJggg==">
+                </div>
+
+                <div>
+                    <img class="chat_background"
+                     src="https://wallpaperaccess.com/full/263007.jpg" alt="background">
+                </div>
+
+                <input class="input" type="text" name="text" id="text"  placeholder=" 😊 Message">
+                
+                <p5 class="attachment" id="attachment">+</p5>
+                
+                <input class="attachment_hidden" type="file" name="attachment" id="attachment">
+                
+                <i class="fa mic" id="mic" onclick="mic()">&#xf130;</i>
+            </div>
+
+    </div>
+
+
+
+</body>

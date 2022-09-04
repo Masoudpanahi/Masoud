@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function</title>
+    </head>
+
+<body>
+    <input type="number" id="num1">
+    <br>
+    <input type="number" id="num2">
+    <br>
+    <div>
+        <button type="button" onclick="begir()">
+            +
+        </button>  
+
+        <button type="button" onclick="menha()">
+            -
+        </button>
+
+        <button type="button" onclick="zarb()">
+            *
+        </button>
+
+        <button type="button" onclick="taghsim()">
+            /
+        </button>
+    </div> 
+    
+    <div id="result"></div>
+    
+    
+    
+    <script>
+        function begir()
+        {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = document.getElementById("result");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            result.innerText = num1 + num2;
+            return
+        }
+
+        function menha()
+        {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = document.getElementById("result");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            result.innerText = num1 - num2;
+            return
+        }
+
+        function zarb()
+        {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = document.getElementById("result");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            result.innerText = num1 * num2;
+            return
+        }
+
+        function taghsim()
+        {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = document.getElementById("result");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            result.innerText = num1 / num2;
+            return
+        }
+
+    </script>
+
+</body>
+</html>

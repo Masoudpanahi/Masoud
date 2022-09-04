@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function</title>
+    </head>
+
+<body>
+    <div id="result" ></div>
+    <div id="result2" ></div>
+    <div id="result3" ></div>
+
+
+
+
+    <script>
+        var resultDiv = document.getElementById("result");
+        var resultDiv2 = document.getElementById("result2");
+        var resultDiv3 = document.getElementById("result3");
+
+
+
+
+
+
+        var resultDiv = document.getElementById("result");
+        var num1 = 12;
+        var num2 = 6;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        resultDiv.innerText = num1 + num2;
+
+
+        var resultDiv2 = document.getElementById("result2");
+        var num3 = 14;
+        var num4 = 7;
+        num3 = parseInt(num3);
+        num4 = parseInt(num4);
+        resultDiv2.innerText = num3 + num4;
+
+
+        function plusnumber (num1 , num2) 
+        {
+            var resultDiv = document.getElementById("result");
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+
+            return (num1 + num2);
+        }
+
+        resultDiv.innerText = plusnumber(12,6);
+        resultDiv2.innerText = plusnumber(14, 7);
+        resultDiv3.innerText = plusnumber(50, 80);
+
+
+
+    </script>
+
+</body>
+</html>
