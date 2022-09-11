@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Array</title>
+ </head>    
+
+ <body>
+    <h1>array</h1>
+
+    <div id="result" style = 'font-size: 22'></div>
+    <div id="result2" style = 'font-size: 50'></div>
+    <div id="result3" style = 'color: rgba(255, 5, 5, 0.868); '></div>
+    <div id="result4" style = 'color: rgb(3, 3, 255)'></div>
+    <div id="result5" style = "color: chartreuse;"></div>
+    <div id="result6" style="color: rgb(255, 0, 225);"></div>
+    <div id="result7" style="color :crimson" ></div>
+    <div id="result8" style=" color: rgb(95, 95, 0); font-size: 25px;" > </div>
+
+</body>
+<script>
+    var names = ["masoud", "beti", "raha", "Mat", "shafi"];
+    var res1 = document.getElementById("result");
+    var res2 = document.getElementById("result2");
+    var res3 = document.getElementById("result3");
+    var res4 = document.getElementById("result4");
+    var res5 = document.getElementById("result5");
+    var res6 = document.getElementById("result6");
+    var res7 = document.getElementById("result7");
+    var res8 = document.getElementById("result8");
+    var names_string = "masoud%beti%mat%shafi%raha";
+    var arr_names = names_string.split("%");
+    //res1.innerText = arr_names.join("*");
+    //res1.innerText = names.join(" % ");
+    //res1.innerText = names.toString();
+    res1.innerText = names.join(" ");
+    res2.innerText = names.pop();
+    res3.innerText = names.shift();
+    //names = names.push("sarina");
+    res4.innerText = names.toString();
+    delete names[0];
+    res5.innerText = names.toString();
+    names [3] = "maman"
+    res6.innerText = names.toString();
+    names[names.length] = "Sahar"
+    res7.innerText = arr_names.reverse().toString();
+    res8.innerText = arr_names.sort().join("****").toString();
+
+</script>
+</html>
