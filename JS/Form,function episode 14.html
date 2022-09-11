@@ -7,6 +7,8 @@
 <body>
     <input type="name" style="width: 50%; height: 40px; font-size: 30px;">
     <br>
+    <textarea id="tex" style="width: 50%; height: 40px; font-size: 32px;"></textarea>
+    <br>
     <button type="button" onclick="Savetoarray()">
         Save
     </button>
@@ -19,8 +21,10 @@
     function Savetoarray()
     {
         var name = document.getElementById("name").value;
-        names.push(name);
+        names.push(name.value);
         document.getElementById("res").innerText = names.join("--");
+        name.value = " ";
+        name.focus();
     }
 
 </script>

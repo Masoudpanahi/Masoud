@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Form</title>
+</head>
+
+<body>
+    <input type="title" style="width: 50%; height: 40px; font-size: 30px;" placeholder="post-title">
+    <br>
+    <textarea id="tex" style="width: 50%; height: 40px; font-size: 32px;" placeholder="post-text"></textarea>
+    <br>
+    <button type="button" onclick="Savetoarray()">
+        Save
+    </button>
+    <br> 
+    <div id="res"></div>
+
+<script>
+    var post_title = [];
+    var post_text = [];
+    
+    function Savetoarray()
+    {
+        var title = document.getElementById("title").value;
+        var text = document.getElementById("text").value;
+        post_text.push(text.value);
+        post_title.push(title.value);
+        title.value = " ";
+        title.focus();
+        text.value = " ";
+        alert(post_title.length)
+
+    }
+
+
+</script>
+</body>
+</html>
