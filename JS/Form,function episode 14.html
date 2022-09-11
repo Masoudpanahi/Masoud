@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <input type="name" style="width: 50%; height: 40px; font-size: 30px;">
+    <br>
+    <button type="button" onclick="Savetoarray()">
+        Save
+    </button>
+    <br> 
+    <div id="res"></div>
+
+<script>
+    var names = [];
+    
+    function Savetoarray()
+    {
+        var name = document.getElementById("name").value;
+        names.push(name);
+        document.getElementById("res").innerText = names.join("--");
+    }
+
+</script>
+</body>
+</html>
