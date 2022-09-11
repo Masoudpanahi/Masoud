@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Form</title>
+</head>
+
+<body>
+    <input id="input1" 
+    onclick="getinput1value()" 
+    onmouseover="mouseover()" 
+    onmouseleave="mouseleave()" 
+    onblur="input1blur()" 
+    onkeypress="keypress()" 
+    onkeyup="keyup()"
+    onkeydown="keydown()">
+    <br>
+    <div id="res1"></div>
+
+<script>
+    function getinput1value()
+    {
+        var input1 = document.getElementById("input1").value;
+        var res1 = document.getElementById("res1");
+
+        res1.innerText = input1
+    }
+
+    function mouseover()
+    {
+        var input1 = document.getElementById("input1").value;
+        res1.innerText = "mouse over input1";
+    }
+
+    function mouseleave()
+    {
+        var input1 = document.getElementById("input1").value;
+        res1.innerText = "mouse leave input1";
+    }
+
+    function mouseleave()
+    {
+        var input1 = document.getElementById("input1").value;
+        res1.innerText = "mouse leave input1";
+    }
+
+    function input1blur ()
+    {
+        var input1 = document.getElementById("input1").value;
+        res1.innerText = "input 1 blur"
+    }
+
+    function keypress()
+    {
+        var input1 = document.getElementById("input1").value;
+        var res1 = document.getElementById("res1");
+
+        res1.innerText = input1 
+    }
+
+    function keyup()
+    {
+        var input1 = document.getElementById("input1").value;
+        var res1 = document.getElementById("res1");
+
+        res1.innerText = input1
+    }
+
+    function keydown()
+    {
+        var input1 = document.getElementById("input1").value;
+        var res1 = document.getElementById("res1");
+
+        res1.innerText = input1
+    }
+
+
+</script>
+</body>
+</html>
