@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <input type="name" style="width: 50%; height: 40px; font-size: 30px;">
+    <input type="name" id="name" style="width: 50%; height: 40px; font-size: 30px;">
     <br>
     <textarea id="tex" style="width: 50%; height: 40px; font-size: 32px;"></textarea>
     <br>
@@ -20,7 +20,7 @@
     
     function Savetoarray()
     {
-        var name = document.getElementById("name").value;
+        var name = document.getElementById("name");
         names.push(name.value);
         document.getElementById("res").innerText = names.join("--");
         name.value = " ";
