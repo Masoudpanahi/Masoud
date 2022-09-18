@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>Query selector</head>
+<style>
+    h1 {
+        color: blue;
+    }
+</style>
+
+
+<body>
+
+    <h1>heading -2</h1>
+    <h1>heading -1</h1>
+    <h1>heading 0</h1>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3 id="headings" > heading id</h3>
+    <h4 class="class"> heading class</h4>
+    
+    <h1 id="test1">Test style1</h1>
+    <h1 id="test1">Test style2</h1>
+    <h1 id="test1">Test style3</h1>
+    <h1 id="test1">Test style4</h1>
+    <h1 id="test1">Test style5</h1>
+    <h1 id="test1">Test style6</h1>
+    <h1 id="test1">Test style7</h1>
+
+
+</body>
+
+<script>
+
+    //var tagname = document.getElementsByTagName("h1");
+    //var Class = document.getElementsByClassName("headings2");
+    //var First_query = document.querySelector("h1");
+    //var All_query = document.querySelectorAll("h1");
+    //var Class_querry = document.querySelector(".Classname");
+
+
+    //var test = document.getElementById("test1");
+    //for (var i = 0 ; i < test.length ; i++)
+    //{
+    //    if(i % 2 == 0)
+    //    {
+    //        test[i].style.color = "red";
+    //    }else{
+    //        test[i].style.color = "red";
+    //    }
+    //}
+
+
+    var headings = document.getElementsByTagName("h1"); 
+    console.log(headings);
+    var headings = document.getElementsByTagName("h1");
+    for (var i = 1 ; i <headings.length ; i++)
+    {
+        console.log(headings[i].innerText);
+    }
+    console.log("---------");
+    
+    
+    var headingsClass = document.getElementsByClassName("headings2");
+    console.log(headingsClass);
+    for (i = 0 ; i< headingsClass.length ; i++)
+    {
+        console.log(headingsClass[i].innerHTML);
+    }
+    console.log("---------");
+    
+    
+    var headings2 = document.querySelectorAll("h1");
+    console.log(headings2)    
+    for (i = 0 ; i < headings2.length ; i++)
+    {
+        console.log(headings2[i].innerText);
+    }
+    console.log("---------");
+
+    var headings3 = document.querySelector(".class")
+    console.log(headings3);
+    for(i = 1 ; i <headings3.length ; i++)
+    {
+        console.log(headings3[i].innerText);
+    }
+    console.log("---------");
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>

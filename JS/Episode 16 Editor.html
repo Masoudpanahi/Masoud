@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> 
+    <title>Editor</title>
+</head>
+
+
+<body>
+    <h1 id="SampleText" style="font-size: 48px;">Sample text for change style</h1>
+
+    <div>
+        <button onclick="fontsizeInc()">
+            Font Size ++        
+        </button>
+        <button onclick="fontsizeDec()"> 
+            Font size --
+        </button>
+    </div>
+
+    <script>
+        function fontsizeInc()
+        {
+            var SampleText = document.getElementById("SampleText");
+            var curFontSize = SampleText.style.fontSize;
+            console.log(curFontSize);
+            curFontSize = curFontSize.replace("px","");
+            curFontSize = parseInt(curFontSize);
+            SampleText.style.fontSize = (curFontSize + 1) + "px";
+        }
+
+        function fontsizeDec()
+        {
+            var SampleText = document.getElementById("SampleText");
+            var curFontSize = SampleText.style.fontSize;
+            console.log(curFontSize);
+            curFontSize = curFontSize.replace("px","");
+            curFontSize = parseInt(curFontSize);
+            SampleText.style.fontSize = (curFontSize - 1) + "px";
+
+        }
+        </script>
+</body>
+</html> 
